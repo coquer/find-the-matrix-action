@@ -32710,7 +32710,7 @@ async function run() {
     return inputs.needle.includes(service[inputs.key]);
   });
 
-  if (inputs.tag !== '') {
+  if (!inputs.tag) {
     const octokit = new Octokit({
       auth: inputs.token,
       baseUrl: GH_API_URL,
