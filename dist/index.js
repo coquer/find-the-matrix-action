@@ -32681,9 +32681,9 @@ async function run() {
     token: core.getInput('token') || process.env.GITHUB_TOKEN,
     needle: core.getInput('needle', {required: true}),
     haystack: core.getInput('haystack', {required: true}),
-    key: core.getInput('key') || null,
+    key: core.getInput('key'),
     repository: core.getInput('repository') || process.env.GITHUB_REPOSITORY,
-    tag: core.getInput('tag'),
+    tag: core.getInput('tag') || null,
   }
 
   core.info('needle: ' + inputs.needle);
