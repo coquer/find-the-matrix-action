@@ -17,7 +17,6 @@ inputs:
   repository:
     description: 'Repository to filter from'
     required: false
-    default: 'conquer/awesome'
   tag:
     description: 'Override tag'
     required: false
