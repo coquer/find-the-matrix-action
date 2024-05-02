@@ -32681,7 +32681,7 @@ async function run() {
     token: core.getInput('token') || process.env.GITHUB_TOKEN,
     needle: core.getInput('needle', {required: true}),
     haystack: core.getInput('haystack', {required: true}),
-    key: core.getInput('key'),
+    key: core.getInput('key') || null,
     repository: core.getInput('repository') || process.env.GITHUB_REPOSITORY,
     tag: core.getInput('tag'),
   }
@@ -32710,7 +32710,7 @@ async function run() {
     return inputs.needle.includes(service[inputs.key]);
   });
 
-  if (!inputs.tag) {
+  if (null === inputs.tag) {
     const octokit = new Octokit({
       auth: inputs.token,
       baseUrl: GH_API_URL,
