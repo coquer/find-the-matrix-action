@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2024-05-02)
+
+
+### Features
+
+* inital release ([5af5728](https://github.com/coquer/find-the-matrix-action/commit/5af57280db54feab637bca0ed8a17b200447d5ef))
+
 ## [1.0.6](https://github.com/coquer/matrix-filter-release/compare/v1.0.5...v1.0.6) (2024-05-01)
 
 
