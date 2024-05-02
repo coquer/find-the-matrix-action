@@ -1,6 +1,9 @@
 name: Find the rabbit action
 description: 'Small filter action'
 inputs:
+  token:
+    description: 'Github token'
+    required: true
   needle:
     description: 'List of items to filter'
     required: true
@@ -11,6 +14,13 @@ inputs:
     description: 'Key to filter by'
     required: false
     default: 'service'
+  repository:
+    description: 'Repository to filter from'
+    required: false
+    default: 'conquer/awesome'
+  tag:
+    description: 'Override tag'
+    required: false
 outputs:
   filtered:
     description: 'Filtered list'
