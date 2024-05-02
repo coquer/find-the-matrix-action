@@ -1,0 +1,19 @@
+name: Find the rabbit action
+description: 'Small filter action'
+inputs:
+  needle:
+    description: 'List of items to filter'
+    required: true
+  haystack:
+    description: 'List of items to filter from'
+    required: true
+  key:
+    description: 'Key to filter by'
+    required: false
+    default: 'service'
+outputs:
+  filtered:
+    description: 'Filtered list'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

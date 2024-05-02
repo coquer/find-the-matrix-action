@@ -1,0 +1,46 @@
+name: Test
+on:
+  push:
+    branches:
+      - solido
+
+  pull_request:
+    branches:
+      - solido
+
+jobs:
+  test-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Package
+        run: npm run package
+
+      - name: Verify it works
+        id: verify-key
+        uses: ./
+        with:
+          haystack: './matrix.json'
+          needle: '["go"]'
+          key: 'type'
+
+      - name: Verify it works
+        id: verify-default
+        uses: ./
+        with:
+          haystack: './matrix.json'
+          needle: '["organization"]'
+
+      - name: get outputs from
+        run: echo "The filtered list is ${{ steps.verify.outputs.filtered }}"
+
