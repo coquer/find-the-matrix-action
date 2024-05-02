@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0](https://github.com/coquer/find-the-matrix-action/compare/v1.0.0...v1.1.0) (2024-05-02)
+
+
+### Features
+
+* enrich with latest tag ([579d7bb](https://github.com/coquer/find-the-matrix-action/commit/579d7bb4703ff4312ee589ac305f256a10f3819d))
+
+
+### Bug Fixes
+
+* falsy check ([a17b829](https://github.com/coquer/find-the-matrix-action/commit/a17b8292d6fccd080cdf4c7b40ac6ef8bdc71bfb))
+* remove wrong default ([25006ed](https://github.com/coquer/find-the-matrix-action/commit/25006ed5bc9172920f04c07e021363b8d1c8cc76))
+* set null as default value ([b8d3c31](https://github.com/coquer/find-the-matrix-action/commit/b8d3c31a5742936c6d5119241f5033549a011be2))
+* set null as default value ([f64f3d5](https://github.com/coquer/find-the-matrix-action/commit/f64f3d5f7d6a23a783eb13cae3a8d4aad586560f))
+
 ## 1.0.0 (2024-05-02)
 
 
