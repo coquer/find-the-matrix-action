@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.1](https://github.com/coquer/find-the-matrix-action/compare/v1.1.0...v1.1.1) (2024-05-03)
+
+
+### Bug Fixes
+
+* use overwrite tag for tests ([5315637](https://github.com/coquer/find-the-matrix-action/commit/5315637db2023aa8c12cadb3750498d36ab31466))
+
+
+### Miscellaneous
+
+* small refactor ([8b8277f](https://github.com/coquer/find-the-matrix-action/commit/8b8277f552883bbea6f405ddc6c4ad704d37d8dc))
+
 ## [1.1.0](https://github.com/coquer/find-the-matrix-action/compare/v1.0.0...v1.1.0) (2024-05-02)
 
 
