@@ -32749,7 +32749,7 @@ async function run() {
 }
 
 async function getLatestTag(token, owner, repo, service, key, defaultTag) {
-  if (defaultTag) {
+  if (null != defaultTag) {
     return defaultTag;
   }
 
