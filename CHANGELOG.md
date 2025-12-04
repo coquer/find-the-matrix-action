@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/coquer/find-the-matrix-action/compare/v1.1.1...v1.1.2) (2025-12-04)
+
+
+### Miscellaneous
+
+* deps upgrade ([b6cac0e](https://github.com/coquer/find-the-matrix-action/commit/b6cac0ec2f1e6b1114c6ff12ce5fb91efe9f3f10))
+
 ## [1.1.1](https://github.com/coquer/find-the-matrix-action/compare/v1.1.0...v1.1.1) (2024-05-03)
 
 
