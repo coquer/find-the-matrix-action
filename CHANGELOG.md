@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/coquer/find-the-matrix-action/compare/v1.2.0...v1.3.0) (2026-05-18)
+
+
+### Features
+
+* changes ([a041149](https://github.com/coquer/find-the-matrix-action/commit/a041149eaf0053ceb766b9351185f493344d3264))
+
 ## [1.2.0](https://github.com/coquer/find-the-matrix-action/compare/v1.1.3...v1.2.0) (2026-05-18)
 
 
