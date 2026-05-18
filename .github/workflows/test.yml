@@ -33,6 +33,7 @@ jobs:
           haystack: './matrix.json'
           needle: '["go"]'
           key: 'type'
+          tag: 'v1'
 
       - name: Verify it works
         id: verify-default
@@ -40,6 +41,7 @@ jobs:
         with:
           haystack: './matrix.json'
           needle: '["organization"]'
+          tag: 'v1'
 
       - name: get outputs from
         run: echo "The filtered list is ${{ steps.verify.outputs.filtered }}"
