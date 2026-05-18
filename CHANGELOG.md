@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/coquer/find-the-matrix-action/compare/v1.1.3...v1.2.0) (2026-05-18)
+
+
+### Features
+
+* general build ([cd2c51e](https://github.com/coquer/find-the-matrix-action/commit/cd2c51e3602ba3e305af23f70e65bb99eea26802))
+* upgrade critical deps ([f44b032](https://github.com/coquer/find-the-matrix-action/commit/f44b0322728505788a7f2b272b54746ebcb483c9))
+
 ## [1.1.3](https://github.com/coquer/find-the-matrix-action/compare/v1.1.2...v1.1.3) (2026-02-12)
 
 
