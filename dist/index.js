@@ -37170,18 +37170,13 @@ async function run() {
           service.latest_tag = tag;
         } else {
           setFailed('No tags found for ' + service[inputs.key]);
+          return;
         }
       }
     }
-
-    if (!filteredMatrix) {
-      info('No services found in the list');
-      setOutput('filtered', '[]');
-      return;
-    }
-
-    setOutput('filtered', JSON.stringify(filteredMatrix));
   }
+
+  setOutput('filtered', JSON.stringify(filteredMatrix));
 }
 
 async function getLatestTag(token, owner, repo, service, key, defaultTag) {
@@ -37189,12 +37184,11 @@ async function getLatestTag(token, owner, repo, service, key, defaultTag) {
     return defaultTag;
   }
 
+  const proxyUrl = process.env.HTTPS_PROXY || process.env.https_proxy;
   const octokit = new rest_dist_src_namespaceObject["default"]({
     auth: token,
     baseUrl: GH_API_URL,
-    request: {
-      agent: new https_proxy_agent_dist_namespaceObject["default"](GH_API_URL),
-    }
+    ...(proxyUrl ? { request: { agent: new https_proxy_agent_dist_namespaceObject["default"](proxyUrl) } } : {})
   });
 
   const {data} = await octokit.repos.listTags({
@@ -37216,7 +37210,6 @@ async function getLatestTag(token, owner, repo, service, key, defaultTag) {
 run().catch((error) => {
   setFailed(error.message);
 });
-
 
 })();
 
