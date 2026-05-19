@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1](https://github.com/coquer/find-the-matrix-action/compare/v1.3.0...v1.3.1) (2026-05-19)
+
+
+### Miscellaneous
+
+* **deps:** bump actions/checkout from 4 to 6 ([fdbb74d](https://github.com/coquer/find-the-matrix-action/commit/fdbb74df0e5fafa1369f8ba4a63e1fbe97009feb))
+* **deps:** bump actions/setup-node from 4 to 6 ([8d801da](https://github.com/coquer/find-the-matrix-action/commit/8d801da825416e8c52622cc65b8a261b21203c8d))
+
 ## [1.3.0](https://github.com/coquer/find-the-matrix-action/compare/v1.2.0...v1.3.0) (2026-05-18)
 
 
