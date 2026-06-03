@@ -21,7 +21,7 @@
     "@actions/io": "^3.0.2",
     "@actions/tool-cache": "4.0.0",
     "@octokit/graphql": "^9.0.3",
-    "@octokit/request": "^10.0.9",
+    "@octokit/request": "^10.0.10",
     "@octokit/request-error": "^7.1.0",
     "@octokit/rest": "^22.0.1",
     "http-proxy-agent": "^9.0.0",
